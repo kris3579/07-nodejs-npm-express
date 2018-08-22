@@ -10,6 +10,7 @@
   "author": "Kris Esvelt, Candice Thomas",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
   }
 }
