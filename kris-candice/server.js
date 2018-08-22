@@ -15,14 +15,14 @@ app.post('/articles', (request, response) => {
   response.status(201).json(request.body);
 });
 
-app.use(function (req, res) {
-  res.status(404).send('sorry can\'t find that!');
+app.use( (req, res) => {
+  res.status(404).send('Error 404 - Sorry can\'t find that!');
 });
 
 app.get('/public/new.html', (req, res) => {
   res.send('you found it!');
 });
 
-app.listen(PORT, function () {
+app.listen(PORT, () => {
   console.log('heard PORT 3000');
 });
