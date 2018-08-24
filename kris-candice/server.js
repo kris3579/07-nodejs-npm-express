@@ -25,6 +25,6 @@ app.use(function (req, res) {
   res.status(404).send('sorry can\'t find that!');
 });
 
-app.listen(PORT, function ()  {
+app.listen(PORT, () => {
   console.log('heard PORT 3000');
 });
